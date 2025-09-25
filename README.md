@@ -1,39 +1,54 @@
 # Titanic Survival Prediction 🚢
 
-This project applies **Data Science and Machine Learning** techniques to predict survival of passengers on the Titanic using the famous Kaggle dataset.
+This project applies **Data Science and Machine Learning** techniques to predict the survival of Titanic passengers using the famous [Kaggle Titanic dataset](https://www.kaggle.com/c/titanic).
+
+---
 
 ## 📊 Project Workflow
 1. **Data Cleaning**
-   - Filled missing `Age` with median
-   - Filled missing `Embarked` with mode
-   - Dropped `Cabin` due to too many missing values
+   - Filled missing `Age` with median  
+   - Filled missing `Embarked` with mode  
+   - Dropped `Cabin` due to too many missing values  
 
 2. **Exploratory Data Analysis (EDA)**
-   - Survival rates by sex, passenger class, age, and family size
-   - Visualization with Seaborn & Matplotlib
+   - Survival rates by `Sex`, `Pclass`, `Age`, and `FamilySize`  
+   - Visualizations with Seaborn & Matplotlib  
 
 3. **Feature Engineering**
-   - Created `FamilySize` and `IsAlone`
-   - Extracted passenger `Title` from names (Mr, Miss, Mrs, etc.)
-   - Created `FareBand` (Low, Medium, High, Very High)
-   - One-hot encoded categorical features
+   - `FamilySize` and `IsAlone`  
+   - Extracted `Title` from passenger names (Mr, Miss, Mrs, etc.)  
+   - `FareBand` (Low, Medium, High, Very High)  
+   - One-hot encoding of categorical features  
 
 4. **Modeling**
-   - Logistic Regression (Accuracy ≈ 0.80)
-   - Random Forest (Accuracy ≈ 0.83)
-   - XGBoost (Accuracy ≈ 0.82)
+   - Logistic Regression → Accuracy ≈ 0.80  
+   - Random Forest → Accuracy ≈ 0.83  
+   - XGBoost → Accuracy ≈ 0.82  
 
 5. **Results**
-   - Best performance: **Random Forest** (≈ 83% accuracy)
-   - Most important features: `Sex`, `Pclass`, `Fare`, `Title`, and `FamilySize`
+   - Best model: **Random Forest** (~83% accuracy)  
+   - Most important features: `Sex`, `Pclass`, `Fare`, `Title`, `FamilySize`  
+
+---
 
 ## 📈 Visualizations
-- Confusion matrices for all models
-- Feature importance (Random Forest & XGBoost)
+Examples of outputs generated in the notebook:
+
+- Confusion Matrices for all models  
+- Feature importance (Random Forest & XGBoost)  
+
+*(You can add PNG images here with `![caption](path/to/img.png)` if you export plots)*  
+
+---
 
 ## 🚀 How to Run
 ```bash
-git clone https://github.com/your-username/Titanic-Survival-Prediction.git
+# clone the repository
+git clone https://github.com/samanmoh1989/Titanic-Survival-Prediction.git
 cd Titanic-Survival-Prediction
+
+# install dependencies
 pip install -r requirements.txt
+
+# run the notebook
 jupyter notebook Titanic.ipynb
