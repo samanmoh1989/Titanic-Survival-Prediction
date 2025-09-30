@@ -1,5 +1,9 @@
 # Titanic Survival Prediction 🚢
-
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-1.4+-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Kaggle Dataset](https://img.shields.io/badge/Data-Kaggle-blue.svg)
 This project applies **Data Science and Machine Learning** techniques to predict the survival of Titanic passengers using the famous [Kaggle Titanic dataset](https://www.kaggle.com/c/titanic).
 
 ---
